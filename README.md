@@ -6,3 +6,4 @@
 - Even Fibonacci numbers
 - Largest prime factor
 - Largest palindrome product
+- Smallest multiple
