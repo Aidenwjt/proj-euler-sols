@@ -10,7 +10,7 @@ divisible by all of the numbers from 1 to 20.
 i = 40
 # While true loop as we will kill the program in the loop
 while(True):
-    # Loop through 1 and 21
+    # Loop through 1 to 20
     for j in range(1,21):
         # Cut if one of the numbers do not evenly divide the current number
         if(i % j != 0):
