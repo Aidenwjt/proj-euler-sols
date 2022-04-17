@@ -8,7 +8,7 @@ of two 3-digit numbers.
 
 # Variable to keep track of largest palindrome
 largest_palindrome = 0
-# Nested loop to loop through all combinations of 3-digit numbers
+# Nested loop to loop through all pairs of 3-digit numbers
 for i in range(100,1000):
     for j in range(100,1000):
         # Get the product
