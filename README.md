@@ -7,3 +7,4 @@
 - Largest prime factor
 - Largest palindrome product
 - Smallest multiple
+- Sum square multiples
