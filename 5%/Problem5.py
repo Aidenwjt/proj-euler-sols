@@ -6,7 +6,7 @@ divisible by all of the numbers from 1 to 20.
 
 # TODO: Probably a better starting value and increment value to reduce the runtime
 
-# Start with 40 as this is the next number divisible by 20 after 20
+# Start with 40 as this is the next multiple of 20 after 20
 i = 40
 # While true loop as we will kill the program in the loop
 while(True):
