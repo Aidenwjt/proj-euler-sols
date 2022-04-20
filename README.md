@@ -9,3 +9,4 @@
 - 5: Smallest multiple
 - 6: Sum square multiples
 - 8: Largest product in a series
+- 9: Special Pythagorean triplet
