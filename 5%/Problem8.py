@@ -1,6 +1,6 @@
 """
 Problem 8: Largest product in a series
-Description: Find the thierteen adjacent digits in the 1000-digit
+Description: Find the thirteen adjacent digits in the 1000-digit
 number that have the greatest product, and find the product.
 """
 
