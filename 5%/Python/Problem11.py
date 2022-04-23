@@ -27,17 +27,65 @@ grid = [[8,2,22,97,38,15,0,40,0,75,4,5,7,78,52,12,50,77,91,8],
         [20,73,35,29,78,31,90,1,74,31,49,71,48,86,81,16,23,57,5,54],
         [1,70,54,71,83,51,54,69,16,92,33,48,61,43,52,1,89,19,67,48]]
 
-# Variable to keep track of the greatest product
+"""
+The idea is to check each direction individually:
+- First left/right,
+- then up/down,
+- then diagonally.
+""" 
+
+# Variable to keep track of the greatest products for each direction
 greatest_product_left_right = 0
+greatest_product_up_down = 0
+greatest_product_diagonally = 0
 
-# The idea is to check each direction individually starting with left/right
+# First check the left/right direction
 for row in grid:
-    for i in range(0,len(row)):
-        if i <= 16:
-            product = 1
-            for j in range(i,i+4):
-                product *= row[j]
-            if product > greatest_product_left_right:
-                greatest_product_left_right = product
-
+    # Index through the first 17 digits
+    for i in range(0,17):
+        product = 1
+        # Get the product of the 4 adjacent digits
+        for j in range(i,i+4):
+            product *= row[j]
+        if product > greatest_product_left_right:
+            greatest_product_left_right = product
 print('Greatest product left/right: {}'.format(greatest_product_left_right))
+
+# Then check the up/down direction, i here represents the column index
+for i in range(0, 20):
+    # j represents the row index, index through the first 17 top to bottom
+    for j in range(0, 17):
+        product = 1
+        # Get the product of the 4 adjacent digits
+        for k in range(j, j+4):
+            product *= grid[k][i]
+        if product > greatest_product_up_down:
+            greatest_product_up_down = product
+print('Greatest product up/down: {}'.format(greatest_product_up_down))
+
+# Then check the diagonal direction, i here represents the row index
+for i in range(0, 17):
+    # j here represents the column index
+    for j in range(0, 17):
+        # First conditional block represents checking for diagonals top down left to right
+        if(j < 17):
+            product = 1
+            l = i
+            for k in range(j, j+4):
+                product *= grid[l][k]
+                l += 1
+            if product > greatest_product_diagonally:
+                greatest_product_diagonally = product
+        # Second conditional block represents checking for diagonals down up left to right
+        if(i >= 3):
+            product = 1
+            l = i
+            for k in range(j, j+4):
+                product *= grid[l][k]
+                l -= 1
+            if product > greatest_product_diagonally:
+                greatest_product_diagonally = product
+print('Greatest product diagonally: {}'.format(greatest_product_diagonally))
+
+# Get the greatest  product overall
+print('The answer is: {}'.format(max(greatest_product_left_right, greatest_product_up_down, greatest_product_diagonally)))
