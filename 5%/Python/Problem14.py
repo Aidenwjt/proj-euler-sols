@@ -1,6 +1,6 @@
 """
 Problem 13: Collatz sequence
-Description: Find the starting tnumber under one million that
+Description: Find the starting number under one million that
 produces the largest Collatz seqence.
 """
 
