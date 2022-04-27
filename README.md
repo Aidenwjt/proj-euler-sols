@@ -12,3 +12,4 @@ Meant to show @NoahPinel that his solutions have slow runtimes and that they are
 - 9: Special Pythagorean triplet
 - 11: Largest product in a grid
 - 13: Large sum
+- 14: Longest Collatz sequence
