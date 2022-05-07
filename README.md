@@ -1,5 +1,7 @@
 ## My Project Euler Solutions and Struggles
-Meant to show @NoahPinel that his solutions have slow runtimes and that they are also cringe, so SPOILERS if you have not solved the questions yourself.
+Meant to show @NoahPinel that his solutions
+- have slow runtimes,
+- and that they are cringe
 
 ## 5% Problems Finished
 - 1: Multiples of 3 or 5
