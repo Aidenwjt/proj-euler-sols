@@ -1,10 +1,5 @@
-"""
-Problem 8: Largest product in a series
-Description: Find the thirteen adjacent digits in the 1000-digit
-number that have the greatest product, and find the product.
-"""
+#!/usr/bin/env python3
 
-# Represent the number as a string so we can slice it
 number= "73167176531330624919225119674426574742355349194934"\
         "96983520312774506326239578318016984801869478851843"\
         "85861560789112949495459501737958331952853208805511"\
@@ -26,8 +21,6 @@ number= "73167176531330624919225119674426574742355349194934"\
         "05886116467109405077541002256983155200055935729725"\
         "71636269561882670428252483600823257530420752963450"
 
-# We now want to know how many products of thirteen adjacent digits
-# of this number we can have
 choices = len(number) - 13
 
 # Now lets begin slicing all the possible choices
@@ -35,30 +28,25 @@ choices = len(number) - 13
 # greatest product will keep track of our answer
 i = 0
 greatest_product = 0
-greatest_digits = ""
-for j in range( 13, choices ):
+for j in range(13, choices):
     # Get the current 13 digits
     digits = number[i:j]
     # Initalize the product to be the value of the first digit
-    product = ord( digits[0] ) % 48
+    product = ord(digits[0]) % 48
     # If the value of the first digit is 0 then the whole product is 0
-    if ( product == 0 ):
-        # Increment the starting index
+    if (product == 0):
         i+=1
         continue
     # Loop through the rest of the digits and get the product
-    for k in range( 1, len(digits) ):
+    for k in range(1, len(digits)):
         product *= ( ord(digits[k]) % 48 )
         # If the product is ever 0 then just break out
-        if ( product == 0 ):
+        if (product == 0):
             break
         # If we have reached the end of iterations and the product is
         # greater than our greatest so far, replace it
-        if ( k == len(digits) - 1 ) and ( product > greatest_product ):
+        if (k == len(digits)-1) and (product > greatest_product):
             greatest_product = product
-            greatest_digits = digits
-    # Increment the starting index
     i += 1
 
-# Print out our answer
-print("The answer is: {} (with digits {})".format(greatest_product,greatest_digits))
+print("The answer is: {}".format(greatest_product))

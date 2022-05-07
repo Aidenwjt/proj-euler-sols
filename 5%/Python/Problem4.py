@@ -1,19 +1,14 @@
-"""
-Problem 4: Largest palindrome product
-Description: Find the largest palindrome made from the product
-of two 3-digit numbers.
-"""
+#!/usr/bin/env python3
 
-# TODO: This can definitely be optimized because I am checking duplicate pairs
-
-# Variable to keep track of largest palindrome
+"""
+TODO: 
+This can definitely be optimized because I am checking duplicate pairs,
+and also there is probably a more mathematical way of doing this.
+"""
 largest_palindrome = 0
-# Nested loop to loop through all pairs of 3-digit numbers
 for i in range(100,1000):
     for j in range(100,1000):
-        # Get the product
         product = i * j
-        # Convert it to a string
         s = str(product)
         # If the string is even length then just reverse the second
         # half and compare to the first half

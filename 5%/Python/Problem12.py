@@ -1,8 +1,4 @@
-"""
-Problem 12: Highly divisible triangular number
-Description: Find the value of the first triangle number
-to have over five hundred divisors.
-"""
+#!/usr/bin/env python3
 
 # TODO: Use prime factorization?
 

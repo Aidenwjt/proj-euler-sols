@@ -1,7 +1,4 @@
-"""
-Problem 7: 10001st prime
-Description: Find the 10001st prime number.
-"""
+#!/usr/bin/env python3
 
 # TODO: Just decide on a primality test already...
 

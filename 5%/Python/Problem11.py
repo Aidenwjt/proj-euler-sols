@@ -1,10 +1,5 @@
-"""
-Problem 11: Largest product in a grid
-Description: Find the greatest product of four adjacent numbers
-in the same direction (up, down, left, right, or diagonally).
-"""
+#!/usr/bin/env python3
 
-# Put the grid into a 2D array
 # @NoahPinel don't copy this lazy bum, write it out yourself
 grid = [[8,2,22,97,38,15,0,40,0,75,4,5,7,78,52,12,50,77,91,8],
         [49,49,99,40,17,81,18,57,60,87,17,40,98,43,69,48,4,56,62,0],
@@ -34,7 +29,6 @@ The idea is to check each direction individually:
 - then diagonally.
 """ 
 
-# Variable to keep track of the greatest products for each direction
 greatest_product_left_right = 0
 greatest_product_up_down = 0
 greatest_product_diagonally = 0

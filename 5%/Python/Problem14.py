@@ -1,8 +1,4 @@
-"""
-Problem 13: Collatz sequence
-Description: Find the starting number under one million that
-produces the largest Collatz seqence.
-"""
+#!/usr/bin/env python3
 
 # TODO: My god, the runtime... (split up the numbers and use multi-threading? Good way to learn how to use threads in python)
 

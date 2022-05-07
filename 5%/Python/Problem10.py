@@ -1,7 +1,4 @@
-"""
-Problem 10: Summation of primes
-Description: Find the sum of all primes below two million.
-"""
+#!/usr/bin/env python3
 
 # TODO: Same issue as problem 7
 
