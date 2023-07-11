@@ -1,7 +1,7 @@
 ## My Project Euler Solutions and Struggles
 Meant to show @NoahPinel that his solutions
-- have slow runtimes,
-- and that they are cringe
+- have slow runtimes, and
+- are cringe.
 
 ## 5% Problems Finished
 - 1: Multiples of 3 or 5
