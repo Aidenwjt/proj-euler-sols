@@ -1,9 +1,4 @@
-## My Project Euler Solutions and Struggles
-Meant to show @NoahPinel that his solutions
-- have slow runtimes, and
-- are cringe.
-
-## 5% Problems Finished
+## Problems Finished
 - 1: Multiples of 3 or 5
 - 2: Even Fibonacci numbers
 - 3: Largest prime factor
