@@ -5,8 +5,10 @@
 - 4: Largest palindrome product
 - 5: Smallest multiple
 - 6: Sum square multiples
+- 7: 10001st Prime
 - 8: Largest product in a series
 - 9: Special Pythagorean triplet
+- 10: Summation of Primes
 - 11: Largest product in a grid
 - 13: Large sum
 - 14: Longest Collatz sequence
